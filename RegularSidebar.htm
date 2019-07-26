@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+header{
+	position: absolute; top: 0; width: 100%; 
+}
+ul {
+	list-style-type: none; margin: 0; overflow: hidden; background-color: #333;
+	padding-left: 50px; height: 50px;
+}
+body{
+	margin:0; padding:0;
+}
+.content{
+	background:white; width:100%; height:700px;
+}
+#footer{    
+	background: #f1f1f1; height:250px; padding-left: 150px;
+}
+#bottom-footer{
+	background: #D4D2D6; height:70px; padding-left: 50px; 
+}
+
+.column {
+  float: left; width: 20%; padding: 10px;
+}
+
+.row:after {
+	content: ""; display: table; clear: both;
+}
+footer{
+	width: 100%;
+}
+section:after {
+	content: ""; display: table; clear: both;	
+}
+section{
+	padding-right: 200px; padding-left: 200px;
+}
+article {
+	float: left;width: 100%;background-color: #D4D2D6; border-radius: 5px; padding: 50px; height:600px;
+}
+li a {
+	float: left; display: block; text-align: center; padding: 14px 16px; text-decoration: none; color: white;
+}
+.search-container {
+	float: right; padding: 6px 10px; margin-top: 6px; margin-right: 250px;
+}
+p a:link {
+	color: #494949; background-color: transparent; text-decoration: none;
+}
+p a:hover {
+  color: #3F5FF0; background-color: transparent;  text-decoration: underline;
+}
+li.v{
+	color: white; font-size:35px; background-color: transparent; text-decoration: none; 
+	font-style: italics; position: absolute; top: -15px; right: 90px;
+}
+.fa {
+  padding: 20px; font-size: 15px; width: 15px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 50%; float: right;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-snapchat-ghost {
+  background: #fffc00; color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-facebook {
+  background: #3B5998; color: white;
+}
+.fa-instagram {
+  background: #125688; color: white;
+}
+.fa-twitter {
+  background: #55ACEE; color: white;
+}
+.fa-google {
+  background: #dd4b39; color: white;
+}
+.sidenav {
+  height: 100%;
+  width: 140px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+
+
+</style>
+
+<body>
+<header>
+	<ul>
+		<li style="float:right; padding-right: 20px"; class="v"><a href="FullPageFormat.htm"><font face="Brush Script MT">SomeName</font></a></li>
+
+		<div class="search-container">
+			<form action="/action_page.php">
+				<input type="text" placeholder="Search.." name="search">
+			</form>
+		</div>
+	</ul>
+</header>
+<section>
+<article>
+	<h2>There is a sidebar over there, it costs $0.00.</h2>
+	<div class="sidenav">
+  <a href="Buttons.htm">Buttons</a>
+  <a href="Timers.htm">Timers</a>
+  <a href="Animations.htm">Animations</a>
+  <a href="Sidebar.htm">Sidebar</a>
+  <a href="Forms.htm">Forms</a>
+  <a href="Miscellaneous.htm">Miscellaneous</a>
+</div>
+
+</article>
+</section>
+<footer>
+  <div id="footer">
+	<div class="row">
+		<div class="column" style="color:black;">
+			<h3>Help & Info</h3>
+			<p><a href="Help.htm">Help</a></p>
+			<p><a href="Help.htm">FAQ</a></p>
+			<p><a href="Help.htm">Discounts</a></p>
+			<p><a href="Help.htm">Delivery</a></p>
+			<p><a href="Help.htm">Customer Service</a></p>
+		</div>
+		<div class="column">
+			<h3>About Store</h3>
+			<p><a href="Help.htm">About SomeName</a></p>
+			<p><a href="Help.htm">Store Locations</a></p>
+			<p><a href="Help.htm">Careers</a></p>
+			<p><a href="Help.htm">Events</a></p>
+
+		</div>
+		<div class="column">
+			<h3>More</h3>
+			<p><a href="Help.htm">Members</a></p>
+			<p><a href="Help.htm">Shopping Cart</a></p>
+			<p><a href="Help.htm">Contact Us</a></p>
+		</div>
+  </div>
+  </div>
+  
+  
+  
+   <div id="bottom-footer">
+    <div class = "inner-wrap clearfix" style ="list-style-type: none";>
+		<li style="float: left; display: block; text-align: center; padding: 14px 16px; text-decoration: none;"><font face="Brush Script MT">™SomeName</font></li>
+    		<a href="#"  class="fa fa-snapchat-ghost"></a>
+		<a href="#"  class="fa fa-instagram"></a>
+		<a href="#"  class="fa fa-facebook"></a>
+		<a href="#"  class="fa fa-google"></a>
+		<a href="#"  class="fa fa-twitter"></a>
+
+    </div>
+  </div>
+ 
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+header{
+	position: absolute; top: 0; width: 100%; 
+}
+ul {
+	list-style-type: none; margin: 0; overflow: hidden; background-color: #333;
+	padding-left: 50px; height: 50px;
+}
+body{
+	margin:0; padding:0;
+}
+.content{
+	background:white; width:100%; height:700px;
+}
+#footer{    
+	background: #f1f1f1; height:250px; padding-left: 50px;
+}
+#bottom-footer{
+	background: #D4D2D6; height:70px; padding-left: 50px; 
+}
+
+.column {
+  float: left; width: 20%; padding: 10px;
+}
+
+.row:after {
+	content: ""; display: table; clear: both;
+}
+footer{
+	width: 100%;
+}
+section:after {
+	content: ""; display: table; clear: both;	
+}
+section{
+	padding-right: 200px; padding-left: 200px;
+}
+article {
+	float: left;width: 100%;background-color: white; border-radius: 5px; padding: 50px; height:900px;
+}
+li a {
+	float: left; display: block; text-align: center; padding: 14px 16px; text-decoration: none; color: white;
+}
+.search-container {
+	float: right; padding: 6px 10px; margin-top: 6px; margin-right: 250px;
+}
+p a:link {
+	color: #494949; background-color: transparent; text-decoration: none;
+}
+p a:hover {
+  color: #3F5FF0; background-color: transparent;  text-decoration: underline;
+}
+li.v{
+	color: white; font-size:35px; background-color: transparent; text-decoration: none; 
+	font-style: italics; position: absolute; top: -15px; right: 90px;
+}
+.fa {
+  padding: 20px; font-size: 15px; width: 15px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 50%; float: right;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-snapchat-ghost {
+  background: #fffc00; color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-facebook {
+  background: #3B5998; color: white;
+}
+.fa-instagram {
+  background: #125688; color: white;
+}
+.fa-twitter {
+  background: #55ACEE; color: white;
+}
+.fa-google {
+  background: #dd4b39; color: white;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 15%; /* IE10 */
+  flex: 15%;
+}
+
+.col-50 {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+}
+
+.col-75 {
+  -ms-flex: 55%; /* IE10 */
+  flex: 55%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+  float: left;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 50%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 200px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.dropdown {
+  position: relative; display: inline-block;
+}
+</style>
+
+<body>
+<header>
+	<ul>
+		<li><a href="Buttons.htm">Buttons</a></li>
+		<li><a href="Timers.htm">Timers</a></li>
+		<li><a href="Animations.htm">Animations</a></li>
+		<li><a href="Sidebar.htm">Sidebar</a></li>
+		<li><a href="Forms.htm">Forms</a></li>
+		<li><a href="Miscellaneous.htm">Miscellaneous</a></li>
+		<li style="float:right; padding-right: 20px"; class="v"><a href="FullPageFormat.htm"><font face="Brush Script MT">SomeName</font></a></li>
+
+		<div class="search-container">
+			<form action="/action_page.php">
+				<input type="text" placeholder="Search.." name="search">
+			</form>
+		</div>
+	</ul>
+</header>
+<section>
+<article>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+	    <label for="lname"></i> Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+            <label for="email"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Email">
+            <label for="adr"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Address">
+            <label for="city"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="City">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="State">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="XXXXXX-XXXX">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="cname">Name On Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Cardholder">
+            <label for="ccnum">Card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="XXX-XXX-XXX-XXXX">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Month">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="Year">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="XXX">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><b>4</b></span></h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div>
+  </div>
+</div>
+</article>
+</section>
+<footer>
+  <div id="footer">
+	<div class="row">
+		<div class="column" style="color:black;">
+			<h3>Help & Info</h3>
+			<p><a href="Help.htm">Help</a></p>
+			<p><a href="Help.htm">FAQ</a></p>
+			<p><a href="Help.htm">Discounts</a></p>
+			<p><a href="Help.htm">Delivery</a></p>
+			<p><a href="Help.htm">Customer Service</a></p>
+		</div>
+		<div class="column">
+			<h3>About Store</h3>
+			<p><a href="Help.htm">About SomeName</a></p>
+			<p><a href="Help.htm">Store Locations</a></p>
+			<p><a href="Help.htm">Careers</a></p>
+			<p><a href="Help.htm">Events</a></p>
+
+		</div>
+		<div class="column">
+			<h3>More</h3>
+			<p><a href="Help.htm">Members</a></p>
+			<p><a href="Help.htm">Shopping Cart</a></p>
+			<p><a href="Help.htm">Contact Us</a></p>
+		</div>
+  </div>
+  </div>
+  
+  
+  
+   <div id="bottom-footer">
+    <div class = "inner-wrap clearfix" style ="list-style-type: none";>
+		<li style="float: left; display: block; text-align: center; padding: 14px 16px; text-decoration: none;"><font face="Brush Script MT">™SomeName</font></li>
+    		<a href="#"  class="fa fa-snapchat-ghost"></a>
+		<a href="#"  class="fa fa-instagram"></a>
+		<a href="#"  class="fa fa-facebook"></a>
+		<a href="#"  class="fa fa-google"></a>
+		<a href="#"  class="fa fa-twitter"></a>
+
+    </div>
+  </div>
+ 
+</footer>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+</body>
+</html>
